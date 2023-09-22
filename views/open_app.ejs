@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Astrotimes</title>
+</head>
+<body>
+	<script>
+		const query = decodeURIComponent("<%= query %>");
+		const package = "<%= package %>";
+		window.open(`liveastro://apis.astrotimes.in/api/v1/deeplink?${query};scheme=liveastro;action=VIEW;end`, "_self");
+		setTimeout(() => {
+			window.open(`market://details?id=${package}`, "_self");
+			window.open(`https://play.google.com/store/apps/details?id=${package}`, "_self");
+		}, 1000);
+	</script>
+</body>
+
+</html>

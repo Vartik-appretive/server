@@ -1,0 +1,14 @@
+[
+	{
+		"relation": [
+			"delegate_permission/common.handle_all_urls"
+		],
+		"target": {
+			"namespace": "android_app",
+			"package_name": "com.astrotime",
+			"sha256_cert_fingerprints": [
+				"0F:EC:11:DC:80:A4:39:F3:06:34:2B:11:32:55:5C:CA:4C:EF:19:CD:22:E5:55:F1:2B:C3:FB:49:E4:82:D3:1D"
+			]
+		}
+	}
+]
